@@ -7,6 +7,8 @@ export const categories: Category[] = [
     slug: 'writing',
     description: 'Tools for blog posts, emails, essays, and creative writing.',
     icon: 'PenTool',
+    color: 'blue',
+    sortOrder: 1,
   },
   {
     id: 'image',
@@ -14,6 +16,8 @@ export const categories: Category[] = [
     slug: 'image',
     description: 'Create art, photos, and assets from text prompts.',
     icon: 'Image',
+    color: 'purple',
+    sortOrder: 2,
   },
   {
     id: 'code',
@@ -21,6 +25,8 @@ export const categories: Category[] = [
     slug: 'code',
     description: 'Code assistants, debuggers, and documentation generators.',
     icon: 'Code',
+    color: 'emerald',
+    sortOrder: 3,
   },
   {
     id: 'productivity',
@@ -28,6 +34,8 @@ export const categories: Category[] = [
     slug: 'productivity',
     description: 'Meeting notetakers, task managers, and email assistants.',
     icon: 'Zap',
+    color: 'amber',
+    sortOrder: 4,
   },
   {
     id: 'video',
@@ -35,6 +43,8 @@ export const categories: Category[] = [
     slug: 'video',
     description: 'Text-to-video, editing assistants, and avatars.',
     icon: 'Video',
+    color: 'red',
+    sortOrder: 5,
   },
   {
     id: 'audio',
@@ -42,5 +52,7 @@ export const categories: Category[] = [
     slug: 'audio',
     description: 'Voice cloning, text-to-speech, and music generation.',
     icon: 'Mic',
+    color: 'blue',
+    sortOrder: 6,
   },
 ];

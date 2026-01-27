@@ -1,4 +1,4 @@
-import { BodyArea } from '@/types';
+import { BodyArea } from '@/types/body-signals';
 
 export const bodyAreas: BodyArea[] = [
   {
