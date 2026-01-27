@@ -1,0 +1,246 @@
+import type { SiteIdea, LaunchedSite } from '@/types';
+
+export const ideas: SiteIdea[] = [
+    // VOTING STAGE
+    {
+        id: 'pet-care-guide',
+        title: 'Pet Care Guide',
+        slug: 'pet-care-guide',
+        tagline: 'Evidence-based pet health information',
+        description: 'Cut through pet industry marketing with science-backed advice on nutrition, health, and behavior for dogs, cats, and other pets.',
+        problemSolved: 'Pet owners are overwhelmed with conflicting advice, often from sources selling products.',
+        targetAudience: 'Pet owners who want honest, science-based guidance',
+        proposedFeatures: ['Nutrition database', 'Breed-specific health guides', 'Vet visit preparation', 'Product reviews'],
+        submittedBy: 'Sarah M.',
+        status: 'voting',
+        votes: 234,
+        fundingGoal: 5000,
+        fundingRaised: 0,
+        contributors: [],
+        createdAt: '2025-01-20',
+        category: 'Lifestyle',
+    },
+    {
+        id: 'retirement-planning',
+        title: 'Retirement Reality',
+        slug: 'retirement-planning',
+        tagline: 'Canadian retirement planning without the sales pitch',
+        description: 'Honest retirement planning info for Canadians. RRSP vs TFSA, CPP optimization, withdrawal strategies, long-term care planning.',
+        problemSolved: 'Financial advisors often have conflicts of interest. Canadians need unbiased retirement info.',
+        targetAudience: 'Canadians 40-70 planning for or in retirement',
+        proposedFeatures: ['CPP calculator', 'Withdrawal optimizer', 'Tax-efficient strategies', 'Long-term care guide'],
+        submittedBy: 'Michael R.',
+        status: 'voting',
+        votes: 189,
+        fundingGoal: 6000,
+        fundingRaised: 0,
+        contributors: [],
+        createdAt: '2025-01-18',
+        category: 'Finance',
+    },
+    {
+        id: 'local-business-truth',
+        title: 'Local Business Truth',
+        slug: 'local-business-truth',
+        tagline: 'Real reviews for small businesses',
+        description: 'Community-verified reviews for local businesses. Fighting fake reviews and highlighting genuinely good local shops.',
+        problemSolved: 'Google and Yelp reviews are full of fakes. Hard to find trustworthy local businesses.',
+        targetAudience: 'Local consumers who want honest recommendations',
+        proposedFeatures: ['Verified purchase reviews', 'Local business profiles', 'Category rankings', 'Complaint resolution'],
+        submittedBy: 'Jennifer L.',
+        status: 'voting',
+        votes: 156,
+        fundingGoal: 8000,
+        fundingRaised: 0,
+        contributors: [],
+        createdAt: '2025-01-22',
+        category: 'Local',
+    },
+    {
+        id: 'dating-decoded',
+        title: 'Dating Decoded',
+        slug: 'dating-decoded',
+        tagline: 'Honest modern dating advice',
+        description: 'Evidence-based dating advice without pickup artist nonsense or toxic positivity. Real strategies for genuine connection.',
+        problemSolved: 'Dating advice online is terrible. Either toxic manipulation or useless platitudes.',
+        targetAudience: 'Adults seeking healthy relationships',
+        proposedFeatures: ['App reviews', 'Communication guides', 'Red flag database', 'Success stories'],
+        submittedBy: 'Alex K.',
+        status: 'voting',
+        votes: 312,
+        fundingGoal: 5000,
+        fundingRaised: 0,
+        contributors: [],
+        createdAt: '2025-01-15',
+        category: 'Relationships',
+    },
+    {
+        id: 'home-repair-honest',
+        title: 'Home Repair Honest',
+        slug: 'home-repair-honest',
+        tagline: 'DIY vs hire decisions made easy',
+        description: 'When to DIY, when to hire, and how to not get ripped off. Tool reviews, contractor vetting, project cost estimates.',
+        problemSolved: 'Homeowners overpay for simple repairs or attempt dangerous DIY projects.',
+        targetAudience: 'Homeowners and renters',
+        proposedFeatures: ['Cost estimator', 'Contractor checklist', 'DIY tutorials', 'Tool reviews'],
+        submittedBy: 'Dave T.',
+        status: 'voting',
+        votes: 178,
+        fundingGoal: 7000,
+        fundingRaised: 0,
+        contributors: [],
+        createdAt: '2025-01-19',
+        category: 'Home',
+    },
+
+    // FUNDING STAGE
+    {
+        id: 'career-pivot',
+        title: 'Career Pivot Guide',
+        slug: 'career-pivot',
+        tagline: 'Change careers without starting over',
+        description: 'Practical guides for career changers. Skills that transfer, industries hiring, retraining programs, salary expectations.',
+        problemSolved: 'People feel trapped in careers. Unclear how to transition without losing everything.',
+        targetAudience: 'Professionals considering career changes',
+        proposedFeatures: ['Industry transition guides', 'Skills mapping', 'Retraining programs', 'Salary data'],
+        submittedBy: 'Lisa M.',
+        status: 'funding',
+        votes: 445,
+        fundingGoal: 6000,
+        fundingRaised: 3200,
+        contributors: [
+            { id: 'c1', name: 'James P.', amount: 500, ownershipPercentage: 8.3, contributedAt: '2025-01-21' },
+            { id: 'c2', name: 'Maria S.', amount: 1000, ownershipPercentage: 16.7, contributedAt: '2025-01-22' },
+            { id: 'c3', name: 'Robert K.', amount: 700, ownershipPercentage: 11.7, contributedAt: '2025-01-23' },
+            { id: 'c4', name: 'Emily D.', amount: 1000, ownershipPercentage: 16.7, contributedAt: '2025-01-24' },
+        ],
+        createdAt: '2025-01-10',
+        category: 'Career',
+    },
+    {
+        id: 'senior-tech',
+        title: 'Senior Tech Guide',
+        slug: 'senior-tech',
+        tagline: 'Technology guides for older adults',
+        description: 'Patient, jargon-free technology guides for seniors. Smartphones, scam protection, video calling, online banking safely.',
+        problemSolved: 'Seniors are often left behind by technology, or targeted by scammers.',
+        targetAudience: 'Adults 65+ and their family helpers',
+        proposedFeatures: ['Step-by-step guides', 'Scam alerts', 'Device recommendations', 'Family helper mode'],
+        submittedBy: 'Carol W.',
+        status: 'funding',
+        votes: 567,
+        fundingGoal: 5000,
+        fundingRaised: 4100,
+        contributors: [
+            { id: 'c5', name: 'Patricia H.', amount: 1500, ownershipPercentage: 30, contributedAt: '2025-01-18' },
+            { id: 'c6', name: 'Thomas B.', amount: 1000, ownershipPercentage: 20, contributedAt: '2025-01-19' },
+            { id: 'c7', name: 'Susan G.', amount: 800, ownershipPercentage: 16, contributedAt: '2025-01-20' },
+            { id: 'c8', name: 'William M.', amount: 800, ownershipPercentage: 16, contributedAt: '2025-01-21' },
+        ],
+        createdAt: '2025-01-08',
+        category: 'Technology',
+    },
+    {
+        id: 'immigrant-guide-canada',
+        title: 'New Canadian Guide',
+        slug: 'immigrant-guide-canada',
+        tagline: 'Everything newcomers need to know',
+        description: 'Practical guide for new immigrants to Canada. Banking, housing, jobs, healthcare, cultural tips from people who made the journey.',
+        problemSolved: 'Official immigration info is bureaucratic. Newcomers need practical, honest advice.',
+        targetAudience: 'Recent and prospective immigrants to Canada',
+        proposedFeatures: ['City comparison', 'Job hunting guides', 'Banking setup', 'Community connections'],
+        submittedBy: 'Priya S.',
+        status: 'funding',
+        votes: 623,
+        fundingGoal: 7000,
+        fundingRaised: 5600,
+        contributors: [
+            { id: 'c9', name: 'Ahmed K.', amount: 2000, ownershipPercentage: 28.6, contributedAt: '2025-01-15' },
+            { id: 'c10', name: 'Wei L.', amount: 1500, ownershipPercentage: 21.4, contributedAt: '2025-01-16' },
+            { id: 'c11', name: 'Fatima B.', amount: 1100, ownershipPercentage: 15.7, contributedAt: '2025-01-17' },
+            { id: 'c12', name: 'Carlos M.', amount: 1000, ownershipPercentage: 14.3, contributedAt: '2025-01-18' },
+        ],
+        createdAt: '2025-01-05',
+        category: 'Immigration',
+    },
+
+    // BUILDING STAGE
+    {
+        id: 'election-compass',
+        title: 'Election Compass',
+        slug: 'election-compass',
+        tagline: 'Unbiased Canadian election guide',
+        description: 'Non-partisan election information. Party positions on issues, candidate backgrounds, voting logistics, fact-checking.',
+        problemSolved: 'Political information is polarized. Voters can\'t find unbiased comparisons.',
+        targetAudience: 'Canadian voters seeking objective information',
+        proposedFeatures: ['Issue comparison', 'Candidate profiles', 'Voting logistics', 'Fact-checker'],
+        submittedBy: 'Nathan C.',
+        status: 'building',
+        votes: 834,
+        fundingGoal: 8000,
+        fundingRaised: 8000,
+        contributors: [
+            { id: 'c13', name: 'Rebecca T.', amount: 2500, ownershipPercentage: 31.3, contributedAt: '2025-01-05' },
+            { id: 'c14', name: 'Steven A.', amount: 2000, ownershipPercentage: 25, contributedAt: '2025-01-06' },
+            { id: 'c15', name: 'Michelle W.', amount: 1500, ownershipPercentage: 18.8, contributedAt: '2025-01-07' },
+            { id: 'c16', name: 'Daniel P.', amount: 2000, ownershipPercentage: 25, contributedAt: '2025-01-08' },
+        ],
+        createdAt: '2025-01-02',
+        category: 'Politics',
+    },
+    {
+        id: 'kid-activity-finder',
+        title: 'Kid Activity Finder',
+        slug: 'kid-activity-finder',
+        tagline: 'What to do with kids in your city',
+        description: 'Curated activities for kids by age, interest, and budget. Indoor, outdoor, free, educational. No sponsored content.',
+        problemSolved: 'Parents struggle to find quality activities that aren\'t paid ads.',
+        targetAudience: 'Parents of children 0-12',
+        proposedFeatures: ['Age filters', 'Budget filters', 'Weather-based suggestions', 'Local event calendar'],
+        submittedBy: 'Amanda L.',
+        status: 'building',
+        votes: 712,
+        fundingGoal: 6000,
+        fundingRaised: 6000,
+        contributors: [
+            { id: 'c17', name: 'Jennifer K.', amount: 1500, ownershipPercentage: 25, contributedAt: '2025-01-08' },
+            { id: 'c18', name: 'Mark S.', amount: 2000, ownershipPercentage: 33.3, contributedAt: '2025-01-09' },
+            { id: 'c19', name: 'Laura B.', amount: 1500, ownershipPercentage: 25, contributedAt: '2025-01-10' },
+            { id: 'c20', name: 'Ryan T.', amount: 1000, ownershipPercentage: 16.7, contributedAt: '2025-01-11' },
+        ],
+        createdAt: '2025-01-03',
+        category: 'Family',
+    },
+];
+
+export const launchedSites: LaunchedSite[] = [
+    { id: 'product-truth', name: 'Product Truth', slug: 'product-truth', tagline: 'Honest product reviews', description: 'Cut through marketing hype with honest reviews.', url: '/product-truth', port: 3001, launchedAt: '2024-06-15', totalContributors: 12, monthlyRevenue: 450, category: 'Shopping' },
+    { id: 'supplements-guide', name: 'Supplements Guide', slug: 'supplements-guide', tagline: 'Evidence-based supplement info', description: 'What the science actually says about supplements.', url: '/supplements-guide', port: 3002, launchedAt: '2024-07-20', totalContributors: 8, monthlyRevenue: 320, category: 'Health' },
+    { id: 'longevity-guide', name: 'Longevity Guide', slug: 'longevity-guide', tagline: 'Add life to your years', description: 'Healthspan-focused interventions and biomarkers.', url: '/longevity-guide', port: 3003, launchedAt: '2024-08-10', totalContributors: 15, monthlyRevenue: 580, category: 'Health' },
+    { id: 'body-signals', name: 'Body Signals', slug: 'body-signals', tagline: 'What your body is telling you', description: 'Symptom guidance and when to see a doctor.', url: '/body-signals', port: 3004, launchedAt: '2024-09-05', totalContributors: 10, monthlyRevenue: 290, category: 'Health' },
+    { id: 'mental-health', name: 'Mental Health Guide', slug: 'mental-health', tagline: 'Evidence-based mental health info', description: 'Understanding conditions and finding help.', url: '/mental-health', port: 3005, launchedAt: '2024-09-25', totalContributors: 18, monthlyRevenue: 410, category: 'Health' },
+    { id: 'ai-tools', name: 'AI Tools Guide', slug: 'ai-tools', tagline: 'Cut through the AI hype', description: 'Honest reviews of AI tools that actually work.', url: '/ai-tools', port: 3006, launchedAt: '2024-10-15', totalContributors: 22, monthlyRevenue: 680, category: 'Technology' },
+    { id: 'difficult-conversations', name: 'Difficult Conversations', slug: 'difficult-conversations', tagline: 'Scripts for hard talks', description: 'What to say in life\'s toughest moments.', url: '/difficult-conversations', port: 3007, launchedAt: '2024-11-01', totalContributors: 14, monthlyRevenue: 350, category: 'Relationships' },
+    { id: 'impact-scorecard', name: 'Impact Scorecard', slug: 'impact-scorecard', tagline: 'Which organizations deliver', description: 'Transparency ratings for nonprofits and companies.', url: '/impact-scorecard', port: 3033, launchedAt: '2025-01-26', totalContributors: 6, monthlyRevenue: 0, category: 'Nonprofit' },
+];
+
+// Helper functions
+export function getIdea(slug: string): SiteIdea | undefined {
+    return ideas.find(i => i.slug === slug);
+}
+
+export function getIdeasByStatus(status: SiteIdea['status']): SiteIdea[] {
+    return ideas.filter(i => i.status === status).sort((a, b) => b.votes - a.votes);
+}
+
+export function getAllIdeas(): SiteIdea[] {
+    return [...ideas].sort((a, b) => b.votes - a.votes);
+}
+
+export function getFundingIdeas(): SiteIdea[] {
+    return getIdeasByStatus('funding');
+}
+
+export function getVotingIdeas(): SiteIdea[] {
+    return getIdeasByStatus('voting');
+}

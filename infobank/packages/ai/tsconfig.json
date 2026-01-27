@@ -1,0 +1,5 @@
+{
+  "extends": "@infobank/config/typescript/base",
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

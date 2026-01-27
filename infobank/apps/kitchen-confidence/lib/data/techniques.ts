@@ -1,0 +1,152 @@
+import type { Technique, FlavorProfile, PantryItem } from '@/types';
+
+export const techniques: Technique[] = [
+    {
+        id: 'roasting',
+        name: 'Roasting',
+        slug: 'roasting',
+        category: 'technique',
+        tagline: 'High heat, dry air',
+        description: 'Cooking food in an oven with dry heat to create browning (Maillard reaction) and concentrate flavor.',
+        whyItWorks: 'Evaporates moisture and caramelizes sugars, creating depth and texture contrast.',
+        steps: [
+            { id: '1', name: 'Prep', description: 'Cut vegetables to uniform size for even cooking.' },
+            { id: '2', name: 'Oil & Season', description: 'Toss with enough oil to coat and salt generously.' },
+            { id: '3', name: 'Space', description: 'Spread on sheet pan without crowding. Crowding = steaming.' },
+            { id: '4', name: 'Heat', description: 'Roast at 400°F-425°F until browned and tender.' },
+        ],
+        commonMistakes: [
+            { id: '1', name: 'Crowding the pan', description: 'Causes vegetables to steam and get soggy instead of crisp.' },
+            { id: '2', name: 'Too low heat', description: 'Food dries out before it browns.' },
+        ],
+        bestFor: ['Root vegetables', 'Whole chicken', 'Broccoli/Cauliflower'],
+        difficulty: 'Beginner',
+        lastUpdated: '2025-01-26',
+    },
+    {
+        id: 'sauteing',
+        name: 'Sautéing',
+        slug: 'sauteing',
+        category: 'technique',
+        tagline: 'Jump in the pan',
+        description: 'Cooking food quickly in a small amount of fat over relatively high heat.',
+        whyItWorks: 'Quickly cooks exterior while preserving texture.',
+        steps: [
+            { id: '1', name: 'Heat Pan', description: 'Preheat pan before adding oil.' },
+            { id: '2', name: 'Heat Fat', description: 'Add oil/butter and wait for shimmer.' },
+            { id: '3', name: 'Add Food', description: 'Do not crowd. Let it sit to sear before moving.' },
+        ],
+        commonMistakes: [
+            { id: '1', name: 'Cold pan', description: 'Food absorbs oil and gets greasy.' },
+            { id: '2', name: 'Constant stirring', description: 'Prevents browning.' },
+        ],
+        bestFor: ['Onions/Garlic', 'Thin meat cuts', 'Greens'],
+        difficulty: 'Beginner',
+        lastUpdated: '2025-01-26',
+    },
+    {
+        id: 'braising',
+        name: 'Braising',
+        slug: 'braising',
+        category: 'technique',
+        tagline: 'Low and slow',
+        description: 'Searing meat at high heat, then finishing slowly in liquid.',
+        whyItWorks: 'Breaks down tough connective tissue (collagen) into gelatin over time.',
+        steps: [
+            { id: '1', name: 'Sear', description: 'Brown the meat deeply on all sides.' },
+            { id: '2', name: 'Deglaze', description: 'Add liquid to scrape up browned bits (fond).' },
+            { id: '3', name: 'Simmer', description: 'Cook covered at low heat until fork tender.' },
+        ],
+        commonMistakes: [
+            { id: '1', name: 'Boiling', description: 'Makes meat tough. Keep it at a gentle simmer.' },
+            { id: '2', name: 'Skipping the sear', description: 'Misses out on major flavor development.' },
+        ],
+        bestFor: ['Chuck roast', 'Short ribs', 'Chicken thighs'],
+        difficulty: 'Intermediate',
+        lastUpdated: '2025-01-26',
+    },
+    {
+        id: 'blanching',
+        name: 'Blanching',
+        slug: 'blanching',
+        category: 'technique',
+        tagline: 'Bright and crisp',
+        description: 'Briefly boiling vegetables then plunging into ice water.',
+        whyItWorks: 'Sets the color (chlorophyll) and stops enzymatic decay while keeping crunch.',
+        steps: [
+            { id: '1', name: 'Boil', description: 'Salted rolling boil.' },
+            { id: '2', name: 'Cook', description: 'Usually 1-3 minutes only.' },
+            { id: '3', name: 'Shock', description: 'Immediate transfer to ice bath.' },
+        ],
+        commonMistakes: [
+            { id: '1', name: 'Overcooking', description: 'Mushy vegetables.' },
+            { id: '2', name: 'No ice bath', description: 'Cooking continues (carryover cooking).' },
+        ],
+        bestFor: ['Green beans', 'Asparagus', 'Broccoli for salads'],
+        difficulty: 'Beginner',
+        lastUpdated: '2025-01-26',
+    },
+    {
+        id: 'emulsifying',
+        name: 'Emulsifying',
+        slug: 'emulsifying',
+        category: 'technique',
+        tagline: 'Mixing oil and water',
+        description: 'Forcing two unmixable liquids into a stable creamy mixture.',
+        whyItWorks: 'Suspends tiny droplets of fat in liquid (or vice versa) to create texture.',
+        steps: [
+            { id: '1', name: 'Base', description: 'Start with acid (vinegar/lemon) + stabilizer (mustard/yolk).' },
+            { id: '2', name: 'Drizzle', description: 'Add oil slowly while whisking vigorously.' },
+        ],
+        commonMistakes: [
+            { id: '1', name: 'Adding oil too fast', description: 'Breaks the emulsion (separation).' },
+        ],
+        bestFor: ['Vinaigrettes', 'Mayonnaise', 'Hollandaise'],
+        difficulty: 'Intermediate',
+        lastUpdated: '2025-01-26',
+    },
+];
+
+export const pantryEssentials: PantryItem[] = [
+    { id: 'kosher-salt', name: 'Phone Number Salt (Kosher)', category: 'Seasoning', whyKeepIt: 'Pure taste, easy to pinch.', uses: ['Everything'] },
+    { id: 'acid', name: 'Vinegars (Apple Cider, Rice, Balsamic)', category: 'Acid', whyKeepIt: 'Brightens heavy flavors.', uses: ['Dressings', 'Finishing soups'] },
+    { id: 'tinned-fish', name: 'Tinned Fish', category: 'Protein', whyKeepIt: 'Instant protein, umami.', uses: ['Pasta', 'Salads', 'Toast'] },
+    { id: 'canned-tomatoes', name: 'Whole Peeled Tomatoes', category: 'Base', whyKeepIt: 'Better quality than diced.', uses: ['Sauces', 'Soups', 'Braising'] },
+    { id: 'beans', name: 'Beans (Cannellini, Chickpea)', category: 'Protein', whyKeepIt: 'Cheap, shelf stable.', uses: ['Stew', 'Salad', 'Hummus'] },
+    { id: 'oil', name: 'Olive Oil', category: 'Fat', whyKeepIt: 'Flavor and cooking medium.', uses: ['Roasting', 'Finishing'] },
+];
+
+export const mealFrameworks: Technique[] = [ // Reusing Technique interface mostly fits
+    {
+        id: 'sheet-pan',
+        name: 'The Sheet Pan Dinner',
+        slug: 'sheet-pan',
+        category: 'framework',
+        tagline: 'One pan, less mess',
+        description: 'Roasting protein and vegetables together.',
+        whyItWorks: 'Efficiency.',
+        steps: [
+            { id: '1', name: 'Timing', description: 'Start dense veg first (potatoes), add softer veg/protein later.' },
+        ],
+        commonMistakes: [],
+        bestFor: ['Weeknights'],
+        difficulty: 'Beginner',
+        lastUpdated: '2025-01-26',
+    },
+    {
+        id: 'grain-bowl',
+        name: 'The Grain Bowl',
+        slug: 'grain-bowl',
+        category: 'framework',
+        tagline: 'Fridge cleanup',
+        description: 'Base + Veg + Protein + Sauce + Crunch.',
+        whyItWorks: 'Infinite variety.',
+        steps: [
+            { id: '1', name: 'Formula', description: 'Grain base, roasted veg, protein, dressing, seeds/nuts.' },
+        ],
+        commonMistakes: [],
+        bestFor: ['Leftovers', 'Lunch'],
+        difficulty: 'Beginner',
+        lastUpdated: '2025-01-26',
+    },
+];

@@ -1,0 +1,8 @@
+{
+  "extends": "@infobank/config/typescript/base",
+  "compilerOptions": {
+    "lib": ["dom", "ES2022"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
