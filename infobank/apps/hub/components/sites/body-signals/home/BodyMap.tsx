@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { bodyAreas } from '@/lib/data/categories';
+import { bodyAreas } from '@/lib/data/sites/body-signals/data/categories';
 import { Brain, Heart, Apple, Bone, PersonStanding, Sun, Activity, HelpCircle } from 'lucide-react';
 
 const IconMap: Record<string, any> = {

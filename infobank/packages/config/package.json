@@ -2,6 +2,7 @@
   "name": "@infobank/config",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "exports": {
     "./tailwind": "./tailwind.config.ts",
     "./typescript/base": "./tsconfig.base.json",
