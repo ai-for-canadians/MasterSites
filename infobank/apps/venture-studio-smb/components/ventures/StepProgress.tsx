@@ -1,6 +1,6 @@
 import { VentureStep } from '@/types';
 import { CheckCircle2, Circle, Lock, Clock, Loader2 } from 'lucide-react';
-import { cn } from '@/lib/utils'; // Assuming basic utils exist in @infobank/ui or locally, mock if needed
+import { cn } from '@infobank/ui';
 
 // Quick local util if not present in project scope yet
 function getStatusColor(status: string) {
