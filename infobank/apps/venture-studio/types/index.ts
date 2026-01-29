@@ -95,11 +95,14 @@ export interface Venture {
     playbookId: string;
     name: string;
     location: string;
-    launcherId: string;
-    status: 'planning' | 'in_progress' | 'launched' | 'paused';
+    description: string;
+    launcherId?: string;
+    status: 'planning' | 'in_progress' | 'launched' | 'paused' | 'funding' | 'operating';
     currentStep: number; // 1-indexed
-    completedSteps: CompletedStep[];
-    fundingReceived: number;
-    contributors: Contributor[];
-    createdAt: string;
+    completedSteps?: CompletedStep[];
+    fundingReceived?: number;
+    totalRaised: number;
+    targetRaise: number;
+    contributors?: Contributor[];
+    createdAt?: string;
 }
