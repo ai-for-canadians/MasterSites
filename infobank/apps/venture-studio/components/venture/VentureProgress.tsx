@@ -7,7 +7,8 @@ interface VentureProgressProps {
 }
 
 export function VentureProgress({ venture, totalSteps }: VentureProgressProps) {
-    const percent = Math.round((venture.completedSteps.length / totalSteps) * 100);
+    const completedCount = venture.completedSteps?.length ?? 0;
+    const percent = Math.round((completedCount / totalSteps) * 100);
 
     return (
         <div className="space-y-4">
