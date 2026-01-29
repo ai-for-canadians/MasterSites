@@ -10,7 +10,7 @@ export const sites: Site[] = [
     description:
       'Fund AI-powered business building and earn dividends. A new model for fractional ownership of local small businesses.',
     categoryId: '3',
-    url: 'http://localhost:3031',
+    url: process.env.NEXT_PUBLIC_URL_VENTURE_SMB || 'http://localhost:3031',
     status: 'live',
     isFeatured: true,
     icon: 'Rocket',
@@ -31,7 +31,7 @@ export const sites: Site[] = [
     description:
       'Transparency ratings for nonprofits and companies. We rate organizations on what actually matters: real impact, transparency, and accountability.',
     categoryId: '2',
-    url: 'http://localhost:3033',
+    url: process.env.NEXT_PUBLIC_URL_IMPACT_SCORECARD || 'http://localhost:3033',
     status: 'live',
     isFeatured: true,
     icon: 'TrendingUp',
@@ -52,7 +52,7 @@ export const sites: Site[] = [
     description:
       'Submit ideas for new InfoBank sites. Community funds development. Contributors become co-owners with revenue sharing.',
     categoryId: '3',
-    url: 'http://localhost:3034',
+    url: process.env.NEXT_PUBLIC_URL_LAUNCHPAD || 'http://localhost:3034',
     status: 'live',
     isFeatured: true,
     icon: 'Rocket',
@@ -73,7 +73,7 @@ export const sites: Site[] = [
     description:
       'Honest, practical reviews of AI tools that actually matter. No affiliate bias, no hype—just clear guidance on what works, what doesn\'t, and what\'s worth your time and money.',
     categoryId: '3',
-    url: 'http://localhost:3006',
+    url: process.env.NEXT_PUBLIC_URL_AI_TOOLS || 'http://localhost:3006',
     status: 'live',
     isFeatured: true,
     icon: 'Bot',
@@ -96,7 +96,7 @@ export const sites: Site[] = [
     description:
       'Don\'t reinvent the wheel. Copy successful models like tool libraries and grocery co-ops. Our AI agents handle the market research and planning.',
     categoryId: '3',
-    url: 'http://localhost:3024',
+    url: process.env.NEXT_PUBLIC_URL_VENTURE_STUDIO || 'http://localhost:3024',
     status: 'live',
     isFeatured: true,
     icon: 'Rocket',
@@ -119,7 +119,7 @@ export const sites: Site[] = [
     description:
       'Rigorous, evidence-based information on psychedelics, nootropics, and research compounds. What the research actually shows—not hype, not fear. For curious minds who want real data.',
     categoryId: '1',
-    url: 'http://localhost:3003',
+    url: process.env.NEXT_PUBLIC_URL_OPEN_INQUIRY || 'http://localhost:3003',
     status: 'live',
     isFeatured: false,
     icon: 'FlaskConical',
@@ -142,7 +142,7 @@ export const sites: Site[] = [
     description:
       'An evidence-based guide to understanding what your body is telling you. From random twitches to persistent pain—know when to worry, when to wait, and when to see someone.',
     categoryId: '1',
-    url: 'http://localhost:3004',
+    url: process.env.NEXT_PUBLIC_URL_BODY_SIGNALS || 'http://localhost:3004',
     status: 'live',
     isFeatured: false,
     icon: 'Activity',
@@ -165,7 +165,7 @@ export const sites: Site[] = [
     description:
       'A searchable database of personal care and household products with ingredient safety analysis, evidence ratings, and better alternatives. Make informed choices about what you put on your body and in your home.',
     categoryId: '1',
-    url: 'http://localhost:3002',
+    url: process.env.NEXT_PUBLIC_URL_PRODUCT_TRUTH || 'http://localhost:3002',
     status: 'live',
     isFeatured: false,
     icon: 'Package',
@@ -187,7 +187,7 @@ export const sites: Site[] = [
     description:
       'Navigate Canadian government benefits, grants, and programs. Federal and provincial coverage with eligibility checkers and application guides. Stop leaving money on the table.',
     categoryId: '4',
-    url: 'http://localhost:3026',
+    url: process.env.NEXT_PUBLIC_URL_BENEFITS_NAVIGATOR || 'http://localhost:3026',
     status: 'live',
     isFeatured: false,
     icon: 'Coins',
@@ -209,7 +209,7 @@ export const sites: Site[] = [
     description:
       'Evidence-based exercises and routines to address common pain from sitting, phone use, and sedentary lifestyles. Interactive body map, video guides, and custom routines to feel better fast.',
     categoryId: '1',
-    url: 'http://localhost:3022',
+    url: process.env.NEXT_PUBLIC_URL_MOVEMENT_RX || 'http://localhost:3022',
     status: 'live',
     isFeatured: false,
     icon: 'Dumbbell',
@@ -233,7 +233,7 @@ export const sites: Site[] = [
     description:
       'Navigate the confusing world of mental health care. Understand different types of therapy, what conditions they treat, how to find providers, and what to expect. Canadian resources included.',
     categoryId: '1',
-    url: 'http://localhost:3007',
+    url: process.env.NEXT_PUBLIC_URL_MENTAL_HEALTH || 'http://localhost:3007',
     status: 'live',
     isFeatured: false,
     icon: 'Brain',
@@ -256,7 +256,7 @@ export const sites: Site[] = [
     description:
       'Cut through the anti-aging hype with evidence-based longevity information. What the research really shows about living longer and healthier. Supplements, interventions, and lifestyle factors—rated by evidence.',
     categoryId: '1',
-    url: 'http://localhost:3009',
+    url: process.env.NEXT_PUBLIC_URL_LONGEVITY_GUIDE || 'http://localhost:3009',
     status: 'live',
     isFeatured: false,
     icon: 'Clock',
@@ -279,7 +279,7 @@ export const sites: Site[] = [
     description:
       'Evidence-based gut health information that goes deeper than "take a probiotic." Understand the microbiome, digestive conditions, and what interventions actually have research support.',
     categoryId: '1',
-    url: 'http://localhost:3010',
+    url: process.env.NEXT_PUBLIC_URL_GUT_HEALTH || 'http://localhost:3010',
     status: 'live',
     isFeatured: false,
     icon: 'Stethoscope',
@@ -302,7 +302,7 @@ export const sites: Site[] = [
     description:
       'Plan your retirement with confidence. From CPP/OAS timing to withdrawal strategies and lifestyle design, we help you navigate the transition to your next chapter.',
     categoryId: '2',
-    url: 'http://localhost:3009',
+    url: process.env.NEXT_PUBLIC_URL_LIFE_AFTER_WORK || 'http://localhost:3032',
     status: 'live',
     isFeatured: false,
     icon: 'Sunset',
@@ -323,7 +323,7 @@ export const sites: Site[] = [
     description:
       'Evidence-based lifestyle changes for managing chronic conditions. From type 2 diabetes to high blood pressure, discover interventions backed by research that your doctor might not have time to discuss.',
     categoryId: '1',
-    url: 'http://localhost:3020',
+    url: process.env.NEXT_PUBLIC_URL_CONDITION_CONTROL || 'http://localhost:3020',
     status: 'live',
     isFeatured: false,
     icon: 'Heart',
@@ -345,7 +345,7 @@ export const sites: Site[] = [
     description:
       'Cut through the supplement industry hype. Evidence ratings for popular supplements, what the research actually shows, recommended dosages, and which ones are worth your money.',
     categoryId: '1',
-    url: 'http://localhost:3012',
+    url: process.env.NEXT_PUBLIC_URL_SUPPLEMENTS_GUIDE || 'http://localhost:3012',
     status: 'live',
     isFeatured: false,
     icon: 'Pill',
@@ -367,7 +367,7 @@ export const sites: Site[] = [
     description:
       'Improve your sleep with strategies backed by research. From sleep hygiene basics to advanced protocols, track what works for you and wake up refreshed.',
     categoryId: '1',
-    url: 'http://localhost:3011',
+    url: process.env.NEXT_PUBLIC_URL_SLEEP_BETTER || 'http://localhost:3011',
     status: 'live',
     isFeatured: false,
     icon: 'Moon',
@@ -388,7 +388,7 @@ export const sites: Site[] = [
     description:
       'Community-submitted health transformations with verification. See what actually worked for real people, not influencer marketing. Filter by goal, timeline, and approach.',
     categoryId: '1',
-    url: 'http://localhost:3021',
+    url: process.env.NEXT_PUBLIC_URL_REAL_RESULTS || 'http://localhost:3021',
     status: 'live',
     isFeatured: false,
     icon: 'Users',
@@ -412,7 +412,7 @@ export const sites: Site[] = [
     description:
       'Strategic career transition guide for mid-career professionals. Identify transferable skills, explore adjacent fields, and create a transition plan that builds on your experience.',
     categoryId: '3',
-    url: 'http://localhost:3013',
+    url: process.env.NEXT_PUBLIC_URL_CAREER_PIVOT || 'http://localhost:3013',
     status: 'live',
     isFeatured: false,
     icon: 'TrendingUp',
@@ -434,7 +434,7 @@ export const sites: Site[] = [
     description:
       'Evidence-based salary negotiation strategies with Canadian market data. Scripts, frameworks, and tactics that actually work, plus real salary ranges for your role and location.',
     categoryId: '3',
-    url: 'http://localhost:3019',
+    url: process.env.NEXT_PUBLIC_URL_SALARY_NEGOTIATION || 'http://localhost:3019',
     status: 'live',
     isFeatured: false,
     icon: 'DollarSign',
@@ -458,7 +458,7 @@ export const sites: Site[] = [
     description:
       'Evidence-based frameworks and actual scripts for hard conversations. Salary negotiations, relationship boundaries, family conflicts, workplace issues. Stop rehearsing in the shower.',
     categoryId: '2',
-    url: 'http://localhost:3005',
+    url: process.env.NEXT_PUBLIC_URL_DIFFICULT_CONVERSATIONS || 'http://localhost:3005',
     status: 'live',
     isFeatured: false,
     icon: 'MessageSquare',
@@ -481,7 +481,7 @@ export const sites: Site[] = [
     description:
       'Practical, step-by-step guides to protecting your privacy online. From quick wins to full digital hardening. No paranoia required—just sensible defaults for modern life.',
     categoryId: '2',
-    url: 'http://localhost:3008',
+    url: process.env.NEXT_PUBLIC_URL_PRIVACY_PLAYBOOK || 'http://localhost:3008',
     status: 'live',
     isFeatured: false,
     icon: 'Shield',
@@ -504,7 +504,7 @@ export const sites: Site[] = [
     description:
       'Practical debt payoff strategies tailored to Canadian financial products. Compare methods, see your payoff timeline, and track progress toward financial freedom.',
     categoryId: '2',
-    url: 'http://localhost:3014',
+    url: process.env.NEXT_PUBLIC_URL_DEBT_FREEDOM || 'http://localhost:3014',
     status: 'live',
     isFeatured: false,
     icon: 'TrendingDown',
@@ -525,7 +525,7 @@ export const sites: Site[] = [
     description:
       'Complete guide to buying your first home in Canada. From saving for a down payment to closing day, understand the process, avoid pitfalls, and make informed decisions.',
     categoryId: '2',
-    url: 'http://localhost:3015',
+    url: process.env.NEXT_PUBLIC_URL_FIRST_HOME_GUIDE || 'http://localhost:3015',
     status: 'live',
     isFeatured: false,
     icon: 'Home',
@@ -547,7 +547,7 @@ export const sites: Site[] = [
     description:
       'Practical systems for life management designed for ADHD brains. No neurotypical advice that doesn\'t work. Focus on what actually helps with executive function challenges.',
     categoryId: '2',
-    url: 'http://localhost:3016',
+    url: process.env.NEXT_PUBLIC_URL_ADHD_SYSTEMS || 'http://localhost:3016',
     status: 'live',
     isFeatured: false,
     icon: 'Zap',
@@ -570,7 +570,7 @@ export const sites: Site[] = [
     description:
       'Essential guide for new permanent residents. Everything you need to do in your first 90 days: documents, banking, healthcare, housing, and settling in by province.',
     categoryId: '4',
-    url: 'http://localhost:3025',
+    url: process.env.NEXT_PUBLIC_URL_NEWCOMER_GUIDE || 'http://localhost:3025',
     status: 'live',
     isFeatured: false,
     icon: 'MapPin',
@@ -593,7 +593,7 @@ export const sites: Site[] = [
     description:
       'Learn cooking techniques and principles instead of following recipes. Build intuition, understand flavours, and cook confidently with what you have on hand.',
     categoryId: '5',
-    url: 'http://localhost:3017',
+    url: process.env.NEXT_PUBLIC_URL_KITCHEN_CONFIDENCE || 'http://localhost:3017',
     status: 'live',
     isFeatured: false,
     icon: 'ChefHat',
@@ -615,7 +615,7 @@ export const sites: Site[] = [
     description:
       'Practical emergency preparedness for Canadian households. From power outages to natural disasters, create a sensible emergency plan without going overboard.',
     categoryId: '5',
-    url: 'http://localhost:3018',
+    url: process.env.NEXT_PUBLIC_URL_EMERGENCY_PREP || 'http://localhost:3018',
     status: 'live',
     isFeatured: false,
     icon: 'ShieldAlert',
@@ -637,7 +637,7 @@ export const sites: Site[] = [
     description:
       'The single place to track your entire career journey. Certifications, projects, networks, and evidence of impact—all in one portable dashboard.',
     categoryId: '3',
-    url: 'http://localhost:3023',
+    url: process.env.NEXT_PUBLIC_URL_COMPASS || 'http://localhost:3023',
     status: 'live',
     isFeatured: false,
     icon: 'Compass',
@@ -659,7 +659,7 @@ export const sites: Site[] = [
     description:
       'What the research actually shows about raising kids. Cut through conflicting advice with evidence ratings and myth-busting summaries.',
     categoryId: '2',
-    url: 'http://localhost:3027',
+    url: process.env.NEXT_PUBLIC_URL_PARENTING_PLAYBOOK || 'http://localhost:3027',
     status: 'live',
     isFeatured: false,
     icon: 'HeartHandshake',
@@ -680,7 +680,7 @@ export const sites: Site[] = [
     description:
       'Practical, judgment-free guidance for separation and divorce in Canada. Legal basics, financial considerations, and emotional support.',
     categoryId: '2',
-    url: 'http://localhost:3028',
+    url: process.env.NEXT_PUBLIC_URL_DIVORCE_NAVIGATOR || 'http://localhost:3028',
     status: 'live',
     isFeatured: false,
     icon: 'HeartCrack',
@@ -701,7 +701,7 @@ export const sites: Site[] = [
     description:
       'Plain-language investing education for Canadians. TFSA, RRSP, and index funds—what actually matters, without the complexity.',
     categoryId: '2',
-    url: 'http://localhost:3029',
+    url: process.env.NEXT_PUBLIC_URL_INVESTING_BASICS || 'http://localhost:3029',
     status: 'live',
     isFeatured: false,
     icon: 'Landmark',
@@ -722,7 +722,7 @@ export const sites: Site[] = [
     description:
       'Essential tools and guides for Canadian freelancers. Tax basics, business structure, and rate calculators for independent success.',
     categoryId: '3',
-    url: 'http://localhost:3030',
+    url: process.env.NEXT_PUBLIC_URL_FREELANCER_TOOLKIT || 'http://localhost:3030',
     status: 'live',
     isFeatured: false,
     icon: 'Briefcase',
