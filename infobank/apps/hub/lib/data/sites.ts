@@ -109,6 +109,27 @@ export const sites: Site[] = [
     whoItsFor: 'Community builders and social entrepreneurs launching local initiatives',
     sortOrder: 5,
   },
+  {
+    id: '34',
+    name: 'Gov Watch Canada',
+    slug: 'gov-watch-canada',
+    tagline: 'Tracking public sector performance',
+    description:
+      'A data-driven scorecard for Canadian provinces and cities. We track modernization, fiscal waste, and bureaucratic efficiency to hold the public sector accountable.',
+    categoryId: '2',
+    url: process.env.NEXT_PUBLIC_URL_GOV_WATCH || 'http://localhost:3036',
+    status: 'live',
+    isFeatured: true,
+    icon: 'Landmark',
+    features: [
+      'Provincial efficiency rankings',
+      'Municipal waste index',
+      'Modernization scores',
+      'Auditor General report tracker',
+    ],
+    whoItsFor: 'Citizens, journalists, and policy makers who demand better value for tax dollars',
+    sortOrder: 5,
+  },
 
   // Other Sites
   {
