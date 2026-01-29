@@ -107,10 +107,7 @@ export const ventures: Venture[] = [
         minContribution: 25,
         maxContribution: 5000,
         createdAt: '2024-06-10',
-        launchTargetDate: '2024-09-01',
-        totalDividendsPaid: 4500,
-        lastDividendDate: '2024-12-15',
-        lastDividendAmount: 4500
+        launchTargetDate: '2024-09-01'
     },
     {
         id: 'halifax-creative',
@@ -139,10 +136,7 @@ export const ventures: Venture[] = [
         minContribution: 25,
         maxContribution: 5000,
         createdAt: '2024-05-20',
-        launchTargetDate: '2024-08-15',
-        totalDividendsPaid: 12000,
-        lastDividendDate: '2024-12-01',
-        lastDividendAmount: 6000
+        launchTargetDate: '2024-08-15'
     },
     {
         id: 'ottawa-pet',
