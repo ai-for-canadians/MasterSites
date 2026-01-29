@@ -735,6 +735,28 @@ export const sites: Site[] = [
     whoItsFor: 'Canadian freelancers and independent contractors managing their own business',
     sortOrder: 33,
   },
+  {
+    id: '34',
+    name: 'Leader Watch',
+    slug: 'leader-watch',
+    tagline: 'Global political transparency scorecard',
+    description:
+      'Tracking G20 world leaders on democracy, equality, transparency, and climate action. Evidence-based ratings showing who is advancing prosperity and who is concentrating power.',
+    categoryId: '2',
+    url: process.env.NEXT_PUBLIC_URL_LEADER_WATCH || 'http://localhost:3035',
+    status: 'live',
+    isFeatured: true,
+    icon: 'Eye',
+    features: [
+      'G20 leadership leaderboard',
+      'Multi-index composite scores',
+      'Key actions database',
+      'Trend tracking (improving/declining)',
+      'Transparent methodology',
+    ],
+    whoItsFor: 'Engaged citizens wanting evidence-based understanding of global political leadership',
+    sortOrder: 0,
+  },
 ];
 
 export function getSiteBySlug(slug: string): Site | undefined {
