@@ -4,7 +4,7 @@ import { Footer } from '@/components/layout/Footer';
 import { ventures } from '@/lib/data/ventures';
 import { ImpactMetricsCard } from '@/components/shared/ImpactMetricsCard';
 import { GovernanceCard } from '@/components/shared/GovernanceCard';
-import { StepProgress } from '@/components/ventures/StepProgress';
+
 import Link from 'next/link';
 import { ArrowLeft, MapPin, Heart } from 'lucide-react';
 
